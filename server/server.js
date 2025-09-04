@@ -23,3 +23,8 @@ mongoose
     console.log("MongoDB connected");
   })
   .catch((err) => console.error(err));
+
+app.get("/", (req, res) => {
+  res.send("🚀 Backend is running successfully!");
+});
+
