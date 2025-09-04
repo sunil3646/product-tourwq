@@ -28,8 +28,7 @@ const MessageModal = ({ message, onClose }) => (
   </AnimatePresence>
 );
 
-const API_URL = "http://localhost:5000/api";
-
+const API_URL = "https://product-tour-45qp.onrender.com/"
 const App = () => {
   const [page, setPage] = useState('landing');
   // For the front-end version, we'll simulate a logged-in user

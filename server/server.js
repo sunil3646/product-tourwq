@@ -11,6 +11,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(cors({
+  origin: "https://product-tour.netlify.app", // your deployed frontend
+  credentials: true,
+}));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/tours", tourRoutes);
 
